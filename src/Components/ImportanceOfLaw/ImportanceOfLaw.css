@@ -1,0 +1,71 @@
+/* Main section container */
+.info-section {
+width: 90%;
+max-width: 1200px;
+margin: 40px auto;
+padding: 30px;
+background: rgba(255, 255, 255, 0.9);
+border-radius: 15px;
+box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+text-align: center;
+}
+
+/* Title styling */
+.section-title {
+font-size: 2.5em;
+color: #f40000;
+margin-bottom: 30px;
+font-weight: bold;
+}
+
+/* Card container styling */
+.reason-cards {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+border-color: black;
+border-radius: 2px;
+}
+
+/* Individual card styling */
+.card {
+background: #ffffff;
+border-radius: 15px;
+padding: 20px;
+margin: 15px;
+flex: 1 1 30%;
+max-width: 300px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Card title styling */
+.card h3.highlight {
+color: #1200d3;
+font-size: 1.5em;
+font-style: bold;
+margin-bottom: 10px;
+text-transform: uppercase;
+letter-spacing: 1px;
+}
+
+/* Card paragraph styling */
+.card p {
+color: #333;
+font-size: 1em;
+line-height: 1.6;
+}
+
+/* Hover effect for cards */
+.card:hover {
+transform: translateY(-5px);
+box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+.card {
+  flex: 1 1 100%; /* Stack cards on small screens */
+  max-width: 100%;
+}
+}

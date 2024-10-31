@@ -1,0 +1,99 @@
+/* Main section container */
+.info-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #fbfbf7, #fce4ec);
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+
+  /* 211619
+  fff9c4 */
+  /* Title styling */
+  .section-title {
+    font-size: 2.5em;
+    color: #ff0000;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  
+  /* Card container styling */
+  .system-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  /* Individual card styling */
+  .card {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15px;
+    flex: 1 1 30%;
+    max-width: 300px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  /* Card title styling */
+  .card h3 {
+    color: #c206f1;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Card paragraph styling */
+  .card p {
+    color: #333;
+    font-size: 1em;
+    line-height: 1.6;
+  }
+  
+  /* Governance image styling */
+  .governance-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 15px 0;
+  }
+  
+  /* Country list styling */
+  .country-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .country-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  
+  /* Country flag styling */
+  .country-flag {
+    width: 20px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  /* Hover effect for cards */
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .card {
+      flex: 1 1 100%; /* Stack cards on small screens */
+      max-width: 100%;
+    }
+  }
+  
